@@ -4,6 +4,7 @@ fetch("http://127.0.0.1:5500/duvidas.json")
   })
   .then(function (data) {
     console.log(data);
+    // laço para listar tarefas
     data.lista_tarefas.forEach(function (duvidaObj) {
       var duvida = document.createElement('div');
       duvida.classList.add('duvidaContainer');
