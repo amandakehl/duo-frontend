@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'FonteTexto'; src: url('Fontes/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FonteSubtitulo'; src: url('Fontes/Montserrat-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontePergunta'; src: url('Fontes/Montserrat-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FonteTitulo'; src: url('Fontes/Montserrat-Black.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    background-color: #F1F1F1;
+}
+
+nav {
+    font-family: 'FonteTexto', sans-serif; 
+    position: absolute;
+    margin-left: 2%;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline; 
+    text-align: center; 
+    vertical-align: middle;
+}
+
+nav a { 
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'FonteSubtitulo', sans-serif;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+nav a:hover{ 
+    color: #A141EB; 
+    transition: .3s;
+}
+
+.icon {
+    align-items: left; vertical-align: middle; 
+    padding-right: 10px;
+}
+
+.franqueado {
+    width: auto;
+    height: 40px;
+    background-color: #D9910B; 
+    border-radius: 50px; border-style: none;
+    padding: 0 20px; 
+    margin-top: 10px; margin-left: 5px; 
+    cursor: pointer; 
+    float: left;
+}
+
+.consultor {
+    width: auto;
+    height: 40px;
+    background-color: #7928B7; 
+    border-radius: 50px; border-style: none;
+    padding: 0 20px;
+    margin-top: 10px; margin-left: 5px;
+    cursor: pointer; 
+    left: 5%;
+    float: left;
+}
+
+.comprar {
+    width: auto;
+    height: 40px;
+    background-color: #0DBBDD; 
+    border-radius: 50px; border-style: none;
+    padding: 0 20px;
+    margin-top: 10px; margin-left: 5px;
+    cursor: pointer; 
+    left: 5%;
+    float: left;
+}
+
+.restrito {
+    width: auto;
+    height: 40px;
+    background-color: #D9910B; 
+    border-radius: 0 0 5px 5px; border-style: none;
+    text-align: center;
+    cursor: pointer; 
+    padding: 7px;
+    display: inline-block;
+    position: fixed; 
+    top: 0;
+    right: 6%; 
+}
+
+.divFrequente {
+    text-align: left; 
+    padding: 10rem 10rem 10rem 1rem; 
+    min-height:100%;
+    background:linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url(header.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.ajuda {
+    color: #A141EB; 
+    font-weight:bold;
+}
+
+.duvida {
+    font-family: 'FonteTitulo'; 
+    font-size: 37px;
+    color: #D9910B; 
+    font-weight: bold; 
+    padding: auto;
+    margin-left: 40px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.textoFrequente {
+    font-family: 'FonteTexto'; font-size: 15px; 
+    width: 360px;
+    margin: 10px auto;
+    margin-left: 40px;
+    line-height: 20px;
+}
+
+main {
+    background-color: #F1F1F1;
+    padding-bottom: 30px; 
+}
+
+.seta {
+    display:block;
+    width: 25px;
+    margin-left: 93%;
+}
+
+.hidden {
+    display: none;
+}
+
+label {
+    text-align:right;
+}
+
+.pergunta {
+    font-family: 'FontePergunta'; 
+    font-size: 16px; 
+    color: #A141EB;
+    padding: 15px 0 10px 40px;
+    line-height: 50px;
+    width: 100%;
+}
+
+.resposta { 
+    font-family: 'FonteTexto'; 
+    font-size: 14px;  
+    line-height: 18px; 
+    width: 70%;
+    padding: 10px 0 15px 40px;
+}
+
+footer {
+    background-color: #7928B7; 
+    padding: 15px 100px; 
+    width: auto;
+}
+
+.duvidaContainer::before {
+    content:'';
+    position:absolute; 
+    top: 10px; 
+    right: 45px; 
+    width: 30px; 
+    height: 17px; 
+    background-image: url(ícones/seta.png);
+    transition: all 0.25s;
+}
+
+.duvidaContainer.ativo::before {
+     /* transform: rotate(180deg) */
+      transform: scaleY(-1) 
+}
+
+.duvidaContainer {
+    position:relative; 
+
+}
+
+@media all and (max-width:768px) {
+    .textoFrequente {
+        font-family: 'FonteTexto'; font-size: 18px; 
+        width: 100%;
+    }
+}
