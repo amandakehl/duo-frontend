@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'FonteTexto'; src: url('Fontes/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FonteSubtitulo'; src: url('Fontes/Montserrat-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontePergunta'; src: url('Fontes/Montserrat-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FonteTitulo'; src: url('Fontes/Montserrat-Black.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #DAEDF5
+}
+
+p {
+    font-size: 40px;
+}
+
