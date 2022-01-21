@@ -1,27 +1,31 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'FonteTexto'; src: url('Fontes/Montserrat-Regular.ttf');
+    font-family: 'Regular'; src: url('../../assets/fontes/Montserrat-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FonteSubtitulo'; src: url('Fontes/Montserrat-SemiBold.ttf');
+    font-family: 'SemiBold'; src: url('../../assets/fontes/Montserrat-SemiBold.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FontePergunta'; src: url('Fontes/Montserrat-Bold.ttf');
+    font-family: 'Bold'; src: url('../../assets/fontes/Montserrat-Bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FonteTitulo'; src: url('Fontes/Montserrat-Black.ttf');
+    font-family: 'Black'; src: url('../../assets/fontes/Montserrat-Black.ttf');
     font-weight: normal;
     font-style: normal;
+}
+
+body {
+    margin: 0;
 }
 
 header {
@@ -29,7 +33,7 @@ header {
 }
 
 nav {
-    font-family: 'FonteTexto', sans-serif; 
+    font-family: 'Regular', sans-serif; 
     position: absolute;
     margin-left: 2%;
 }
@@ -48,7 +52,7 @@ nav li {
 nav a { 
     text-transform: uppercase;
     color: #FFFFFF;
-    font-family: 'FonteSubtitulo', sans-serif;
+    font-family: 'SemiBold', sans-serif;
     text-decoration: none;
     font-size: 11px;
 }
@@ -116,7 +120,7 @@ nav a:hover{
     text-align: left; 
     padding: 10rem 10rem 10rem 1rem; 
     min-height:100%;
-    background:linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url(header.png);
+    background:linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url(../../assets/images/header.png);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center right;
@@ -128,7 +132,7 @@ nav a:hover{
 }
 
 .duvida {
-    font-family: 'FonteTitulo'; 
+    font-family: 'Black'; 
     font-size: 37px;
     color: #D9910B; 
     font-weight: bold; 
@@ -141,7 +145,7 @@ strong {
 }
 
 .textoFrequente {
-    font-family: 'FonteTexto'; font-size: 15px; 
+    font-family: 'Regular'; font-size: 15px; 
     width: 360px;
     margin: 10px auto;
     margin-left: 40px;
@@ -168,16 +172,17 @@ label {
 }
 
 .pergunta {
-    font-family: 'FontePergunta'; 
+    font-family: 'SemiBold'; 
     font-size: 16px; 
     color: #A141EB;
     padding: 15px 0 10px 40px;
     line-height: 50px;
     width: 100%;
+    cursor: pointer;
 }
 
 .resposta { 
-    font-family: 'FonteTexto'; 
+    font-family: 'Regular'; 
     font-size: 14px;  
     line-height: 18px; 
     width: 70%;
@@ -197,7 +202,7 @@ footer {
     right: 45px; 
     width: 30px; 
     height: 17px; 
-    background-image: url(ícones/seta.png);
+    background-image: url(../../assets/images/seta.png);
     transition: all 0.25s;
 }
 
@@ -213,7 +218,7 @@ footer {
 
 @media all and (max-width:768px) {
     .textoFrequente {
-        font-family: 'FonteTexto'; font-size: 18px; 
+        font-family: 'Regular'; font-size: 18px; 
         width: 100%;
     }
 }

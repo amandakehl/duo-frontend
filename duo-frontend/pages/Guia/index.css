@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Regular'; src: url('../../assets/fontes/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SemiBold'; src: url('../../assets/fontes/Montserrat-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bold'; src: url('../../assets/fontes/Montserrat-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Black'; src: url('../../assets/fontes/Montserrat-Black.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #F1F1F1
+}
+
+.pergunta {
+    font-family: 'SemiBold'; 
+    font-size: 16px; 
+    color: #A141EB;
+    padding: 15px 0 10px 40px;
+    line-height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
